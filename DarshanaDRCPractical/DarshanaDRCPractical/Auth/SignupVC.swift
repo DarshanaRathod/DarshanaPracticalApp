@@ -25,6 +25,10 @@ class SignupVC: UIViewController {
 
     // MARK: - Button Action
     @IBAction func btnSignUpAction(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView") as! NextViewController
+        self.present(nextViewController, animated:true, completion:nil)
+        
     }
     
     
