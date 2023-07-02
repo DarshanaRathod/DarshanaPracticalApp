@@ -19,7 +19,6 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -48,9 +47,7 @@ class LoginVC: UIViewController {
     
     @IBAction func btnLoginAction(_ sender: UIButton) {
         if validate(){
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-            self.navigationController?.pushViewController(vc, animated: true)
+            fetchData()
         }
     }
 }
@@ -73,22 +70,39 @@ extension LoginVC{
         } catch {
             print("Storing data Failed")
         }
-       // fetchData()
+        fetchData()
     }
     
-//    func fetchData(){
-//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
-//        request.returnsObjectsAsFaults = false
-//        do {
-//            let result = try context.fetch(request)
-//            for data in result as! [NSManagedObject] {
-//                let index = data.value(forKey: "title") as! String
-//                self.arrIndexDisplay.append(index)
-//            }
-//        } catch {
-//            print("Fetching data Failed")
-//        }
-//    }
+    func fetchData(){
+        context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            if(result.isEmpty){
+                showToast(message: "No Data Found")
+                return
+            }
+            for data in result as! [NSManagedObject] {
+                let email = data.value(forKey: "email") as! String
+                let password = data.value(forKey: "password") as! String
+              
+                if(txtEmail.text == email && txtPassword.text == password){
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let initialViewController = storyboard.instantiateViewController(withIdentifier: "DashboardVC")  as! DashboardVC
+                    let navigationController = UINavigationController.init(rootViewController: initialViewController)
+                    navigationController.setNavigationBarHidden(true, animated: false)
+                    appDelegate.window?.rootViewController = navigationController
+                    appDelegate.window?.makeKeyAndVisible()
+                }
+                break
+            }
+        } catch {
+            print("Fetching data Failed")
+        }
+    }
+    
+    
 }
 
 

@@ -59,17 +59,6 @@
                                                             <constraint firstAttribute="height" constant="50" id="bvh-tA-oD0"/>
                                                             <constraint firstItem="fV2-Mv-NBn" firstAttribute="leading" secondItem="d3y-eZ-24N" secondAttribute="leading" constant="10" id="hwE-6U-Dyi"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                                <color key="value" red="0.83529411760000005" green="0.83529411760000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                                <integer key="value" value="0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tP-UM-dtx">
                                                         <rect key="frame" x="0.0" y="60" width="270" height="50"/>
@@ -89,17 +78,6 @@
                                                             <constraint firstItem="JKW-s9-5XF" firstAttribute="top" secondItem="3tP-UM-dtx" secondAttribute="top" id="rcq-qE-pkb"/>
                                                             <constraint firstAttribute="bottom" secondItem="JKW-s9-5XF" secondAttribute="bottom" id="ub2-WO-W4H"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                                <color key="value" red="0.83529411760000005" green="0.83529411760000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                                <integer key="value" value="0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06u-dh-QKM">
                                                         <rect key="frame" x="0.0" y="120" width="270" height="50"/>
@@ -162,17 +140,6 @@
                                                             <constraint firstAttribute="bottom" secondItem="2H5-4m-s0m" secondAttribute="bottom" id="eR2-3B-qT5"/>
                                                             <constraint firstAttribute="height" constant="50" id="j47-KA-jZj"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                                <color key="value" red="0.83529411760000005" green="0.83529411760000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                                <integer key="value" value="0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DH6-JN-aCx">
                                                         <rect key="frame" x="0.0" y="240" width="270" height="50"/>
@@ -192,17 +159,6 @@
                                                             <constraint firstItem="Qyb-oF-CU6" firstAttribute="leading" secondItem="DH6-JN-aCx" secondAttribute="leading" constant="10" id="Snt-sK-RTo"/>
                                                             <constraint firstAttribute="trailing" secondItem="Qyb-oF-CU6" secondAttribute="trailing" constant="10" id="mtx-df-4Tx"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                                <color key="value" red="0.83529411760000005" green="0.83529411760000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                                <integer key="value" value="0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -330,17 +286,6 @@
                                                             <constraint firstAttribute="trailing" secondItem="aQw-Si-jYA" secondAttribute="trailing" constant="10" id="yva-BW-ACE"/>
                                                             <constraint firstItem="aQw-Si-jYA" firstAttribute="top" secondItem="5xB-H3-Nd2" secondAttribute="top" id="zNl-iP-Ell"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                                <color key="value" red="0.83529411760000005" green="0.83529411760000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                                <integer key="value" value="0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNG-ZI-43w">
                                                         <rect key="frame" x="0.0" y="60" width="270" height="50"/>
@@ -360,17 +305,6 @@
                                                             <constraint firstAttribute="height" constant="50" id="pyA-5d-Pto"/>
                                                             <constraint firstItem="XME-v6-aeo" firstAttribute="top" secondItem="jNG-ZI-43w" secondAttribute="top" id="xWD-gw-QwL"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                                <color key="value" red="0.83529411760000005" green="0.83529411760000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                                <integer key="value" value="0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>

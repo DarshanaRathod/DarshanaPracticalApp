@@ -164,6 +164,7 @@
 			packageReferences = (
 				FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				FA097E062A518C9400384D0B /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = FAA2DCFA2A51565000CC3B89 /* Products */;
 			projectDirPath = "";
@@ -440,6 +441,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
+			};
+		};
+		FA097E062A518C9400384D0B /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

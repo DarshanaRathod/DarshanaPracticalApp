@@ -66,17 +66,9 @@ class SignupVC: UIViewController {
 
     // MARK: - Button Action
     @IBAction func btnSignUpAction(_ sender: UIButton) {
-        
         if validate(){
             self.openDatabse(email: txtEmail.text!, password:txtPassword.text!)
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "DashboardVC")  as! DashboardVC
-            let navigationController = UINavigationController.init(rootViewController: initialViewController)
-            navigationController.setNavigationBarHidden(true, animated: false)
-            appDelegate.window?.rootViewController = navigationController
-            appDelegate.window?.makeKeyAndVisible()
-            
+            self.navigationController?.popViewController(animated: true)
         }
     }
 }
@@ -100,5 +92,21 @@ extension SignupVC{
             print("Storing data Failed")
         }
     }
+    
+    
+    func deleteAllData(entity: String){
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let results = try appDelegate.persistentContainer.viewContext.fetch(fetchRequest)
+            for managedObject in results{
+                let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
+                appDelegate.persistentContainer.viewContext.delete(managedObjectData)
+            }
+        } catch let error as NSError {
+            print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
+        }
+    }
+    
 }
 
