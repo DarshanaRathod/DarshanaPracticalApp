@@ -13,7 +13,7 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var lblname: UILabel!
     @IBOutlet weak var tblProductList: UITableView!
     
-//    var arrProductList = ProductList
+    var arrProductList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +29,19 @@ class DashboardVC: UIViewController {
     }
 }
 
-//extension DashboardVC: UITableViewDataSource, UITableViewDelegate{
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return arrProductList.count
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let identifier = "tblProductCell"
-//              var cell: tblProductCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? tblProductCell
-//              if cell == nil {
-//                  tblProductList.register(UINib(nibName: "tblProductCell", bundle: nil), forCellReuseIdentifier: identifier)
-//                  cell = tblProductList.dequeueReusableCell(withIdentifier: identifier) as? NotificationTblCell
-//              }
-//              return cell
-//    }
-//}
+extension DashboardVC: UITableViewDataSource, UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrProductList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifier = "tblProductCell"
+              var cell: tblProductCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? tblProductCell
+              if cell == nil {
+                  tblProductList.register(UINib(nibName: "tblProductCell", bundle: nil), forCellReuseIdentifier: identifier)
+                  cell = tblProductList.dequeueReusableCell(withIdentifier: identifier) as? tblProductCell
+              }
+              return cell
+    }
+}
