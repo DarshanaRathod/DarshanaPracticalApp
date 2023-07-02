@@ -20,16 +20,20 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //MARK:- Validation
+    //MARK: - Validation
     func validate() -> Bool {
         if txtEmail.text!.isEmpty{
-            showAlert(message: LabelsList.shared.MSG_LOGIN_ENTER_MOBILE_NUMBER)
-        }else if txtPassword.text!.isEmpty{
-            showAlert(message: LabelsList.shared.MSG_LOGIN_ENTER_PASSWORD)
+            showToast(message: "Please enter email")
+            return false
+        }else if !(isValidEmail(txtEmail.text!)){
+            showToast(message: "Please enter valid email")
+             return false
+         }else if txtPassword.text!.isEmpty{
+             showToast(message: "Please enter password")
+             return false
         }else{
             return true
         }
-        return false
     }
     
     
@@ -42,7 +46,9 @@ class LoginVC: UIViewController {
     
     @IBAction func btnLoginAction(_ sender: UIButton) {
         if validate(){
-            SignInAPI()
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

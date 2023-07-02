@@ -701,6 +701,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Add Cart"/>
+                                        <connections>
+                                            <action selector="btnAddCardAction:" destination="CAR-rr-Nhl" eventType="touchUpInside" id="FXc-i8-ttp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-6a-FsY">
                                         <rect key="frame" x="260" y="0.0" width="60" height="64"/>
@@ -709,6 +712,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="btnLogoutAction:" destination="CAR-rr-Nhl" eventType="touchUpInside" id="tph-Tr-roP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -724,11 +730,11 @@
                                     <constraint firstItem="Tqy-bZ-ffK" firstAttribute="centerY" secondItem="0Kn-Ts-3cc" secondAttribute="centerY" id="z2E-y0-5w1"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6w-K2-WPz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6w-K2-WPz">
                                 <rect key="frame" x="0.0" y="64" width="320" height="636"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="185" id="Y3K-1g-AXA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tblProductCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tblProductCell" rowHeight="185" id="Y3K-1g-AXA" customClass="tblProductCell" customModule="DarshanaDRCPractical" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="320" height="185"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y3K-1g-AXA" id="xwO-lr-rQR">
@@ -815,6 +821,15 @@
                                                 <constraint firstAttribute="trailing" secondItem="o1S-pv-dCz" secondAttribute="trailing" id="gvj-Eq-q8H"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnLike" destination="IJq-97-dWB" id="mzZ-IR-WLS"/>
+                                            <outlet property="imgProduct" destination="TfF-6l-KJl" id="6MP-dz-aFE"/>
+                                            <outlet property="lblLike" destination="ehc-7v-ay6" id="Z4O-c4-QEd"/>
+                                            <outlet property="lblPrice" destination="6Ok-dw-GNZ" id="C4e-Uv-7Kb"/>
+                                            <outlet property="lblProductName" destination="v1Y-nX-Skb" id="2mI-1N-zo0"/>
+                                            <outlet property="lblQuantity" destination="avQ-mG-jjP" id="iw7-6h-cON"/>
+                                            <outlet property="stepper" destination="ct8-0N-FTJ" id="DJI-za-ReD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -833,6 +848,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="1yo-cU-N7C"/>
                     <size key="freeformSize" width="320" height="700"/>
+                    <connections>
+                        <outlet property="lblname" destination="Tqy-bZ-ffK" id="FJf-Is-Zxs"/>
+                        <outlet property="tblProductList" destination="q6w-K2-WPz" id="5ZL-rW-bD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51u-DY-MIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
