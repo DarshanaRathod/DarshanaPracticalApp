@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA097E022A51864D00384D0B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA097E012A51864D00384D0B /* IQKeyboardManagerSwift */; };
+		FA097E052A5187FA00384D0B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA097E042A5187FA00384D0B /* SDWebImage */; };
 		FA1E49632A5172AD00D74AD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49622A5172AD00D74AD9 /* Constant.swift */; };
 		FA1E49662A51787100D74AD9 /* tblProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49652A51787000D74AD9 /* tblProductCell.swift */; };
 		FAA2DCFD2A51565000CC3B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2DCFC2A51565000CC3B89 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA097E052A5187FA00384D0B /* SDWebImage in Frameworks */,
+				FA097E022A51864D00384D0B /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,10 @@
 			dependencies = (
 			);
 			name = DarshanaDRCPractical;
+			packageProductDependencies = (
+				FA097E012A51864D00384D0B /* IQKeyboardManagerSwift */,
+				FA097E042A5187FA00384D0B /* SDWebImage */,
+			);
 			productName = DarshanaDRCPractical;
 			productReference = FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +161,10 @@
 				Base,
 			);
 			mainGroup = FAA2DCF02A51565000CC3B89;
+			packageReferences = (
+				FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = FAA2DCFA2A51565000CC3B89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,6 +424,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA097E012A51864D00384D0B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		FA097E042A5187FA00384D0B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAF208ED2A516E6100AFE752 /* Model.xcdatamodeld */ = {

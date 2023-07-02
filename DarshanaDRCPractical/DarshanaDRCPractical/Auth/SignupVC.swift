@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SignupVC: UIViewController {
 
@@ -15,6 +16,9 @@ class SignupVC: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
     @IBOutlet weak var btnSignup: UIButton!
+    
+    var context:NSManagedObjectContext!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +52,7 @@ class SignupVC: UIViewController {
         }else if txtPassword.text!.count < 6{
              showToast(message: "Password must be at least 6 char")
              return false
-        }else if txtConfirmPassword.text!.count < 6{
+        }else if txtConfirmPassword.text!.isEmpty{
             showToast(message: "Please enter confirm password")
              return false
         }else if txtPassword.text! != txtConfirmPassword.text!{
@@ -63,11 +67,38 @@ class SignupVC: UIViewController {
     // MARK: - Button Action
     @IBAction func btnSignUpAction(_ sender: UIButton) {
         
-        
-        
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-        self.present(nextViewController, animated:true, completion:nil)
-        
+        if validate(){
+            self.openDatabse(email: txtEmail.text!, password:txtPassword.text!)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "DashboardVC")  as! DashboardVC
+            let navigationController = UINavigationController.init(rootViewController: initialViewController)
+            navigationController.setNavigationBarHidden(true, animated: false)
+            appDelegate.window?.rootViewController = navigationController
+            appDelegate.window?.makeKeyAndVisible()
+            
+        }
     }
 }
+
+
+//MARK: Functions
+extension SignupVC{
+    func openDatabse(email: String, password:String){
+        context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Users", in: context)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        saveData(UserDBObj:newUser, email: txtEmail.text!, password:txtPassword.text!)
+    }
+    
+    func saveData(UserDBObj:NSManagedObject, email: String, password:String){
+        UserDBObj.setValue(email, forKey: "email")
+        UserDBObj.setValue(password, forKey: "password")
+        do {
+            try context.save()
+        } catch {
+            print("Storing data Failed")
+        }
+    }
+}
+

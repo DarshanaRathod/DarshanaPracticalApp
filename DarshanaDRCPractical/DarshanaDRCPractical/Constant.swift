@@ -20,23 +20,60 @@ func isValidEmail(_ email: String) -> Bool {
 
 
 extension UIViewController {
+    
+    static let DELAY_SHORT = 1.5
+      static let DELAY_LONG = 3.0
 
-func showToast(message : String) {
+      func showToast(message : String) {
+          let label = ToastLabel()
+          label.backgroundColor = UIColor.blue
+          label.textColor = .white
+          label.textAlignment = .center
+          label.font = UIFont.systemFont(ofSize: 14)
+          label.alpha = 0
+          label.text = message
+          label.clipsToBounds = true
+          label.layer.cornerRadius = 20
+          label.numberOfLines = 0
+          label.textInsets = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+          label.translatesAutoresizingMaskIntoConstraints = false
+          view.addSubview(label)
 
-    let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
-    toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-    toastLabel.textColor = UIColor.white
-    toastLabel.font = UIFont.systemFont(ofSize: 16)
-    toastLabel.textAlignment = .center;
-    toastLabel.text = message
-    toastLabel.alpha = 1.0
-    toastLabel.layer.cornerRadius = 10;
-    toastLabel.clipsToBounds  =  true
-    self.view.addSubview(toastLabel)
-    UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
-         toastLabel.alpha = 0.0
-    }, completion: {(isCompleted) in
-        toastLabel.removeFromSuperview()
-    })
-} }
+          let saveArea = view.safeAreaLayoutGuide
+          label.centerXAnchor.constraint(equalTo: saveArea.centerXAnchor, constant: 0).isActive = true
+          label.leadingAnchor.constraint(greaterThanOrEqualTo: saveArea.leadingAnchor, constant: 15).isActive = true
+          label.trailingAnchor.constraint(lessThanOrEqualTo: saveArea.trailingAnchor, constant: -15).isActive = true
+          label.bottomAnchor.constraint(equalTo: saveArea.bottomAnchor, constant: -30).isActive = true
+
+          UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
+              label.alpha = 1
+          }, completion: { _ in
+              UIView.animate(withDuration: 4.0, delay: UIViewController.DELAY_SHORT, options: .curveEaseOut, animations: {
+                  label.alpha = 0
+              }, completion: {_ in
+                  label.removeFromSuperview()
+              })
+          })
+      }
+}
+
+
+class ToastLabel: UILabel {
+    var textInsets = UIEdgeInsets.zero {
+        didSet { invalidateIntrinsicContentSize() }
+    }
+
+    
+    override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+        let insetRect = bounds.inset(by: textInsets)
+        let textRect = super.textRect(forBounds: insetRect, limitedToNumberOfLines: numberOfLines)
+        let invertedInsets = UIEdgeInsets(top: -textInsets.top, left: -textInsets.left, bottom: -textInsets.bottom, right: -textInsets.right)
+
+        return textRect.inset(by: invertedInsets)
+    }
+
+    override func drawText(in rect: CGRect) {
+        super.drawText(in: rect.inset(by: textInsets))
+    }
+}
 
