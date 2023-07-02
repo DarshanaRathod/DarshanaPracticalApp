@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA097E022A51864D00384D0B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA097E012A51864D00384D0B /* IQKeyboardManagerSwift */; };
-		FA097E052A5187FA00384D0B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA097E042A5187FA00384D0B /* SDWebImage */; };
+		FA097E092A51972B00384D0B /* ProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA097E082A51972B00384D0B /* ProductResponseModel.swift */; };
 		FA1E49632A5172AD00D74AD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49622A5172AD00D74AD9 /* Constant.swift */; };
 		FA1E49662A51787100D74AD9 /* tblProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49652A51787000D74AD9 /* tblProductCell.swift */; };
 		FAA2DCFD2A51565000CC3B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2DCFC2A51565000CC3B89 /* AppDelegate.swift */; };
@@ -24,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA097E082A51972B00384D0B /* ProductResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponseModel.swift; sourceTree = "<group>"; };
 		FA1E49622A5172AD00D74AD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FA1E49652A51787000D74AD9 /* tblProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblProductCell.swift; sourceTree = "<group>"; };
 		FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarshanaDRCPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,14 +45,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA097E052A5187FA00384D0B /* SDWebImage in Frameworks */,
-				FA097E022A51864D00384D0B /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA097E072A51971500384D0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA097E082A51972B00384D0B /* ProductResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FA1E49642A51785400D74AD9 /* TblCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +113,7 @@
 		FAF208F02A51712900AFE752 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				FA097E072A51971500384D0B /* Model */,
 				FA1E49642A51785400D74AD9 /* TblCell */,
 				FAF208F12A51714600AFE752 /* DashboardVC.swift */,
 			);
@@ -130,8 +137,6 @@
 			);
 			name = DarshanaDRCPractical;
 			packageProductDependencies = (
-				FA097E012A51864D00384D0B /* IQKeyboardManagerSwift */,
-				FA097E042A5187FA00384D0B /* SDWebImage */,
 			);
 			productName = DarshanaDRCPractical;
 			productReference = FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */;
@@ -165,6 +170,7 @@
 				FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				FA097E062A518C9400384D0B /* XCRemoteSwiftPackageReference "Moya" */,
+				FA93B1CA2A519B6F006A1FF3 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			productRefGroup = FAA2DCFA2A51565000CC3B89 /* Products */;
 			projectDirPath = "";
@@ -193,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA097E092A51972B00384D0B /* ProductResponseModel.swift in Sources */,
 				FAF208EA2A51694C00AFE752 /* SignupVC.swift in Sources */,
 				FAA2DD012A51565000CC3B89 /* ViewController.swift in Sources */,
 				FAF208F22A51714600AFE752 /* DashboardVC.swift in Sources */,
@@ -353,8 +360,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -384,8 +391,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,20 +458,15 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		FA93B1CA2A519B6F006A1FF3 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FA097E012A51864D00384D0B /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-		FA097E042A5187FA00384D0B /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAF208ED2A516E6100AFE752 /* Model.xcdatamodeld */ = {

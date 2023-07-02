@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 class LoginVC: UIViewController {
-
+    
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignIn: UIButton!
@@ -20,6 +20,10 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if #available(iOS 13.0, *) {
+            navigationController?.navigationBar.setNeedsLayout()
+        }
+        
     }
     
     //MARK: - Validation
@@ -29,10 +33,10 @@ class LoginVC: UIViewController {
             return false
         }else if !(isValidEmail(txtEmail.text!)){
             showToast(message: "Please enter valid email")
-             return false
-         }else if txtPassword.text!.isEmpty{
-             showToast(message: "Please enter password")
-             return false
+            return false
+        }else if txtPassword.text!.isEmpty{
+            showToast(message: "Please enter password")
+            return false
         }else{
             return true
         }
@@ -55,23 +59,6 @@ class LoginVC: UIViewController {
 
 //MARK: Functions
 extension LoginVC{
-    func openDatabse(email: String, password:String){
-        context = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Users", in: context)
-        let newUser = NSManagedObject(entity: entity!, insertInto: context)
-        saveData(UserDBObj:newUser, email: txtEmail.text!, password:txtPassword.text!)
-    }
-    
-    func saveData(UserDBObj:NSManagedObject, email: String, password:String){
-        UserDBObj.setValue(email, forKey: "email")
-        UserDBObj.setValue(password, forKey: "password")
-        do {
-            try context.save()
-        } catch {
-            print("Storing data Failed")
-        }
-        fetchData()
-    }
     
     func fetchData(){
         context = appDelegate.persistentContainer.viewContext
@@ -86,12 +73,12 @@ extension LoginVC{
             for data in result as! [NSManagedObject] {
                 let email = data.value(forKey: "email") as! String
                 let password = data.value(forKey: "password") as! String
-              
+                
                 if(txtEmail.text == email && txtPassword.text == password){
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let initialViewController = storyboard.instantiateViewController(withIdentifier: "DashboardVC")  as! DashboardVC
-                    let navigationController = UINavigationController.init(rootViewController: initialViewController)
-                    navigationController.setNavigationBarHidden(true, animated: false)
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    let homeViewController = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+                    let nav = UINavigationController(rootViewController: homeViewController)
+                    nav.isNavigationBarHidden = true
                     appDelegate.window?.rootViewController = navigationController
                     appDelegate.window?.makeKeyAndVisible()
                 }
