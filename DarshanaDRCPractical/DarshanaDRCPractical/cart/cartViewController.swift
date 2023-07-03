@@ -1,15 +1,8 @@
 //
-<<<<<<< HEAD
 // cartViewController.swift
 // DarshanaDRCPractical
 //
 //  Created by Ravi on 02/07/23.
-=======
-//  cartViewController.swift
-//  DarshanaDRCPractical
-//
-//  Created by Technource on 03/07/23.
->>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 //
 
 import UIKit
