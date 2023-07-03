@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
+=======
+		DB0A9DDB2A528DB900E92C15 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DB0A9DDA2A528DB900E92C15 /* SwiftyJSON */; };
+		DB0A9DDD2A52A49100E92C15 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A9DDC2A52A49100E92C15 /* Product.swift */; };
+		DB0A9DE02A52B1A000E92C15 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DB0A9DDF2A52B1A000E92C15 /* SDWebImage */; };
+		DB0A9DE32A52E07900E92C15 /* cartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A9DE22A52E07900E92C15 /* cartViewController.swift */; };
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 		FA1E49632A5172AD00D74AD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49622A5172AD00D74AD9 /* Constant.swift */; };
 		FA1E49662A51787100D74AD9 /* tblProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49652A51787000D74AD9 /* tblProductCell.swift */; };
 		FA93B1CD2A51B754006A1FF3 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA93B1CC2A51B754006A1FF3 /* IQKeyboardManagerSwift */; };
@@ -18,8 +25,11 @@
 		FABEB8DB2A51BCD000148347 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FABEB8DA2A51BCD000148347 /* Moya */; };
 		FABEB8DF2A51CA0F00148347 /* myService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEB8DE2A51CA0F00148347 /* myService.swift */; };
 		FABEB8E22A51D28B00148347 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = FABEB8E12A51D28B00148347 /* ObjectMapper */; };
+<<<<<<< HEAD
 		FAD9D0762A533274006CFC7F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D0752A533274006CFC7F /* Product.swift */; };
 		FAD9D0782A5332AD006CFC7F /* cart in Resources */ = {isa = PBXBuildFile; fileRef = FAD9D0772A5332AD006CFC7F /* cart */; };
+=======
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 		FAF208EA2A51694C00AFE752 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF208E92A51694C00AFE752 /* SignupVC.swift */; };
 		FAF208EC2A51698D00AFE752 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF208EB2A51698D00AFE752 /* LoginVC.swift */; };
 		FAF208EF2A516E6100AFE752 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF208ED2A516E6100AFE752 /* Model.xcdatamodeld */; };
@@ -27,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
+=======
+		DB0A9DDC2A52A49100E92C15 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DB0A9DE22A52E07900E92C15 /* cartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 		FA1E49622A5172AD00D74AD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FA1E49652A51787000D74AD9 /* tblProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblProductCell.swift; sourceTree = "<group>"; };
 		FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarshanaDRCPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,8 +52,11 @@
 		FAA2DD082A51565400CC3B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA2DD0A2A51565400CC3B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABEB8DE2A51CA0F00148347 /* myService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myService.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		FAD9D0752A533274006CFC7F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FAD9D0772A5332AD006CFC7F /* cart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cart; sourceTree = "<group>"; };
+=======
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 		FAF208E92A51694C00AFE752 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		FAF208EB2A51698D00AFE752 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FAF208EE2A516E6100AFE752 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -52,17 +70,35 @@
 			files = (
 				FABEB8E22A51D28B00148347 /* ObjectMapper in Frameworks */,
 				FABEB8DB2A51BCD000148347 /* Moya in Frameworks */,
+<<<<<<< HEAD
 				FA93B1CD2A51B754006A1FF3 /* IQKeyboardManagerSwift in Frameworks */,
+=======
+				DB0A9DDB2A528DB900E92C15 /* SwiftyJSON in Frameworks */,
+				FA93B1CD2A51B754006A1FF3 /* IQKeyboardManagerSwift in Frameworks */,
+				DB0A9DE02A52B1A000E92C15 /* SDWebImage in Frameworks */,
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0A9DE12A52E05E00E92C15 /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				DB0A9DE22A52E07900E92C15 /* cartViewController.swift */,
+			);
+			path = cart;
+			sourceTree = "<group>";
+		};
 		FA097E072A51971500384D0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				FAD9D0752A533274006CFC7F /* Product.swift */,
+=======
+				DB0A9DDC2A52A49100E92C15 /* Product.swift */,
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,7 +130,11 @@
 		FAA2DCFB2A51565000CC3B89 /* DarshanaDRCPractical */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				FAD9D0772A5332AD006CFC7F /* cart */,
+=======
+				DB0A9DE12A52E05E00E92C15 /* cart */,
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 				FABEB8DC2A51C9D800148347 /* Helper */,
 				FAF208F02A51712900AFE752 /* Dashboard */,
 				FAF208E82A51692000AFE752 /* Auth */,
@@ -165,6 +205,11 @@
 				FA93B1CC2A51B754006A1FF3 /* IQKeyboardManagerSwift */,
 				FABEB8DA2A51BCD000148347 /* Moya */,
 				FABEB8E12A51D28B00148347 /* ObjectMapper */,
+<<<<<<< HEAD
+=======
+				DB0A9DDA2A528DB900E92C15 /* SwiftyJSON */,
+				DB0A9DDF2A52B1A000E92C15 /* SDWebImage */,
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 			);
 			productName = DarshanaDRCPractical;
 			productReference = FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */;
@@ -198,7 +243,12 @@
 				FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				FABEB8D92A51BCD000148347 /* XCRemoteSwiftPackageReference "Moya" */,
 				FABEB8E02A51D28B00148347 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+<<<<<<< HEAD
 				FAD9D0792A533357006CFC7F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+=======
+				DB0A9DD92A528DB900E92C15 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				DB0A9DDE2A52B1A000E92C15 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 			);
 			productRefGroup = FAA2DCFA2A51565000CC3B89 /* Products */;
 			projectDirPath = "";
@@ -231,8 +281,13 @@
 				FAF208EA2A51694C00AFE752 /* SignupVC.swift in Sources */,
 				FAA2DD012A51565000CC3B89 /* ViewController.swift in Sources */,
 				FAF208F22A51714600AFE752 /* DashboardVC.swift in Sources */,
+				DB0A9DE32A52E07900E92C15 /* cartViewController.swift in Sources */,
 				FA1E49662A51787100D74AD9 /* tblProductCell.swift in Sources */,
+<<<<<<< HEAD
 				FAD9D0762A533274006CFC7F /* Product.swift in Sources */,
+=======
+				DB0A9DDD2A52A49100E92C15 /* Product.swift in Sources */,
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 				FA1E49632A5172AD00D74AD9 /* Constant.swift in Sources */,
 				FAA2DCFD2A51565000CC3B89 /* AppDelegate.swift in Sources */,
 				FAF208EC2A51698D00AFE752 /* LoginVC.swift in Sources */,
@@ -382,8 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DarshanaDRCPractical/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,6 +455,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = demo.DarshanaDRCPractical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -413,8 +470,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DarshanaDRCPractical/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -430,6 +488,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = demo.DarshanaDRCPractical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -463,6 +522,32 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+<<<<<<< HEAD
+		FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+=======
+		DB0A9DD92A528DB900E92C15 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+<<<<<<< HEAD
+				branch = master;
+				kind = branch;
+			};
+		};
+=======
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DB0A9DDE2A52B1A000E92C15 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -471,6 +556,7 @@
 				kind = branch;
 			};
 		};
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 		FABEB8D92A51BCD000148347 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -485,6 +571,7 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.0.0;
+<<<<<<< HEAD
 			};
 		};
 		FAD9D0792A533357006CFC7F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
@@ -493,11 +580,26 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+=======
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+<<<<<<< HEAD
+=======
+		DB0A9DDA2A528DB900E92C15 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB0A9DD92A528DB900E92C15 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		DB0A9DDF2A52B1A000E92C15 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB0A9DDE2A52B1A000E92C15 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+>>>>>>> 08d7c7b1880695f13b951f8316b5d0ca8574ca65
 		FA93B1CC2A51B754006A1FF3 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
