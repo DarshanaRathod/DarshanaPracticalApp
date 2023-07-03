@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA097E092A51972B00384D0B /* ProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA097E082A51972B00384D0B /* ProductResponseModel.swift */; };
 		FA1E49632A5172AD00D74AD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49622A5172AD00D74AD9 /* Constant.swift */; };
 		FA1E49662A51787100D74AD9 /* tblProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E49652A51787000D74AD9 /* tblProductCell.swift */; };
+		FA93B1CD2A51B754006A1FF3 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA93B1CC2A51B754006A1FF3 /* IQKeyboardManagerSwift */; };
 		FAA2DCFD2A51565000CC3B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2DCFC2A51565000CC3B89 /* AppDelegate.swift */; };
-		FAA2DCFF2A51565000CC3B89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2DCFE2A51565000CC3B89 /* SceneDelegate.swift */; };
 		FAA2DD012A51565000CC3B89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2DD002A51565000CC3B89 /* ViewController.swift */; };
 		FAA2DD042A51565000CC3B89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA2DD022A51565000CC3B89 /* Main.storyboard */; };
 		FAA2DD062A51565400CC3B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA2DD052A51565400CC3B89 /* Assets.xcassets */; };
 		FAA2DD092A51565400CC3B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA2DD072A51565400CC3B89 /* LaunchScreen.storyboard */; };
+		FABEB8DB2A51BCD000148347 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FABEB8DA2A51BCD000148347 /* Moya */; };
+		FABEB8DF2A51CA0F00148347 /* myService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEB8DE2A51CA0F00148347 /* myService.swift */; };
+		FABEB8E22A51D28B00148347 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = FABEB8E12A51D28B00148347 /* ObjectMapper */; };
+		FAD9D0762A533274006CFC7F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D0752A533274006CFC7F /* Product.swift */; };
+		FAD9D0782A5332AD006CFC7F /* cart in Resources */ = {isa = PBXBuildFile; fileRef = FAD9D0772A5332AD006CFC7F /* cart */; };
 		FAF208EA2A51694C00AFE752 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF208E92A51694C00AFE752 /* SignupVC.swift */; };
 		FAF208EC2A51698D00AFE752 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF208EB2A51698D00AFE752 /* LoginVC.swift */; };
 		FAF208EF2A516E6100AFE752 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF208ED2A516E6100AFE752 /* Model.xcdatamodeld */; };
@@ -23,17 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA097E082A51972B00384D0B /* ProductResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponseModel.swift; sourceTree = "<group>"; };
 		FA1E49622A5172AD00D74AD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FA1E49652A51787000D74AD9 /* tblProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblProductCell.swift; sourceTree = "<group>"; };
 		FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarshanaDRCPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA2DCFC2A51565000CC3B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA2DCFE2A51565000CC3B89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAA2DD002A51565000CC3B89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAA2DD032A51565000CC3B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA2DD052A51565400CC3B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA2DD082A51565400CC3B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA2DD0A2A51565400CC3B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABEB8DE2A51CA0F00148347 /* myService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myService.swift; sourceTree = "<group>"; };
+		FAD9D0752A533274006CFC7F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FAD9D0772A5332AD006CFC7F /* cart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cart; sourceTree = "<group>"; };
 		FAF208E92A51694C00AFE752 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		FAF208EB2A51698D00AFE752 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FAF208EE2A516E6100AFE752 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABEB8E22A51D28B00148347 /* ObjectMapper in Frameworks */,
+				FABEB8DB2A51BCD000148347 /* Moya in Frameworks */,
+				FA93B1CD2A51B754006A1FF3 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +62,7 @@
 		FA097E072A51971500384D0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA097E082A51972B00384D0B /* ProductResponseModel.swift */,
+				FAD9D0752A533274006CFC7F /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,10 +94,11 @@
 		FAA2DCFB2A51565000CC3B89 /* DarshanaDRCPractical */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9D0772A5332AD006CFC7F /* cart */,
+				FABEB8DC2A51C9D800148347 /* Helper */,
 				FAF208F02A51712900AFE752 /* Dashboard */,
 				FAF208E82A51692000AFE752 /* Auth */,
 				FAA2DCFC2A51565000CC3B89 /* AppDelegate.swift */,
-				FAA2DCFE2A51565000CC3B89 /* SceneDelegate.swift */,
 				FAA2DD002A51565000CC3B89 /* ViewController.swift */,
 				FAA2DD022A51565000CC3B89 /* Main.storyboard */,
 				FAA2DD052A51565400CC3B89 /* Assets.xcassets */,
@@ -99,6 +108,22 @@
 				FA1E49622A5172AD00D74AD9 /* Constant.swift */,
 			);
 			path = DarshanaDRCPractical;
+			sourceTree = "<group>";
+		};
+		FABEB8DC2A51C9D800148347 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FABEB8DD2A51C9ED00148347 /* MoyaNetworkHelper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FABEB8DD2A51C9ED00148347 /* MoyaNetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FABEB8DE2A51CA0F00148347 /* myService.swift */,
+			);
+			path = MoyaNetworkHelper;
 			sourceTree = "<group>";
 		};
 		FAF208E82A51692000AFE752 /* Auth */ = {
@@ -137,6 +162,9 @@
 			);
 			name = DarshanaDRCPractical;
 			packageProductDependencies = (
+				FA93B1CC2A51B754006A1FF3 /* IQKeyboardManagerSwift */,
+				FABEB8DA2A51BCD000148347 /* Moya */,
+				FABEB8E12A51D28B00148347 /* ObjectMapper */,
 			);
 			productName = DarshanaDRCPractical;
 			productReference = FAA2DCF92A51565000CC3B89 /* DarshanaDRCPractical.app */;
@@ -167,10 +195,10 @@
 			);
 			mainGroup = FAA2DCF02A51565000CC3B89;
 			packageReferences = (
-				FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				FA097E062A518C9400384D0B /* XCRemoteSwiftPackageReference "Moya" */,
-				FA93B1CA2A519B6F006A1FF3 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				FABEB8D92A51BCD000148347 /* XCRemoteSwiftPackageReference "Moya" */,
+				FABEB8E02A51D28B00148347 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				FAD9D0792A533357006CFC7F /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = FAA2DCFA2A51565000CC3B89 /* Products */;
 			projectDirPath = "";
@@ -188,6 +216,7 @@
 			files = (
 				FAA2DD092A51565400CC3B89 /* LaunchScreen.storyboard in Resources */,
 				FAA2DD062A51565400CC3B89 /* Assets.xcassets in Resources */,
+				FAD9D0782A5332AD006CFC7F /* cart in Resources */,
 				FAA2DD042A51565000CC3B89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,16 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA097E092A51972B00384D0B /* ProductResponseModel.swift in Sources */,
 				FAF208EA2A51694C00AFE752 /* SignupVC.swift in Sources */,
 				FAA2DD012A51565000CC3B89 /* ViewController.swift in Sources */,
 				FAF208F22A51714600AFE752 /* DashboardVC.swift in Sources */,
 				FA1E49662A51787100D74AD9 /* tblProductCell.swift in Sources */,
+				FAD9D0762A533274006CFC7F /* Product.swift in Sources */,
 				FA1E49632A5172AD00D74AD9 /* Constant.swift in Sources */,
 				FAA2DCFD2A51565000CC3B89 /* AppDelegate.swift in Sources */,
-				FAA2DCFF2A51565000CC3B89 /* SceneDelegate.swift in Sources */,
 				FAF208EC2A51698D00AFE752 /* LoginVC.swift in Sources */,
 				FAF208EF2A516E6100AFE752 /* Model.xcdatamodeld in Sources */,
+				FABEB8DF2A51CA0F00148347 /* myService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,39 +463,57 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA097E002A51864D00384D0B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
-		FA097E032A5187FA00384D0B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		FA097E062A518C9400384D0B /* XCRemoteSwiftPackageReference "Moya" */ = {
+		FABEB8D92A51BCD000148347 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
-		FA93B1CA2A519B6F006A1FF3 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+		FABEB8E02A51D28B00148347 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 4.0.0;
+			};
+		};
+		FAD9D0792A533357006CFC7F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA93B1CC2A51B754006A1FF3 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA93B1CB2A51B754006A1FF3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		FABEB8DA2A51BCD000148347 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABEB8D92A51BCD000148347 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		FABEB8E12A51D28B00148347 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABEB8E02A51D28B00148347 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAF208ED2A516E6100AFE752 /* Model.xcdatamodeld */ = {

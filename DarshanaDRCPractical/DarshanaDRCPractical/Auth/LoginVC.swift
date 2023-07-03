@@ -53,6 +53,7 @@ class LoginVC: UIViewController {
         if validate(){
             fetchData()
         }
+       
     }
 }
 
@@ -70,20 +71,24 @@ extension LoginVC{
                 showToast(message: "No Data Found")
                 return
             }
-            for data in result as! [NSManagedObject] {
-                let email = data.value(forKey: "email") as! String
-                let password = data.value(forKey: "password") as! String
-                
-                if(txtEmail.text == email && txtPassword.text == password){
-                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                    let homeViewController = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-                    let nav = UINavigationController(rootViewController: homeViewController)
-                    nav.isNavigationBarHidden = true
-                    appDelegate.window?.rootViewController = navigationController
-                    appDelegate.window?.makeKeyAndVisible()
+        
+                for data in result as! [NSManagedObject] {
+                    let email = data.value(forKey: "email") as! String
+                    let password = data.value(forKey: "password") as! String
+                    if(txtEmail.text == email && txtPassword.text == password){
+                        UserDefaults.standard.set(txtEmail.text, forKey: "user_email")
+                        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                        let homeViewController = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+                        let nav = UINavigationController(rootViewController: homeViewController)
+                        nav.isNavigationBarHidden = true
+                        appDelegate.window?.rootViewController = nav
+                        appDelegate.window?.makeKeyAndVisible()
+                    }else{
+                        showToast(message: "Email id or Password was incorrect")
+                    }
+                   
                 }
-                break
-            }
+          
         } catch {
             print("Fetching data Failed")
         }

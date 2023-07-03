@@ -23,8 +23,7 @@ class SignupVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+       }
     
     //MARK: - Validation
     func validate() -> Bool {
@@ -67,11 +66,40 @@ class SignupVC: UIViewController {
     // MARK: - Button Action
     @IBAction func btnSignUpAction(_ sender: UIButton) {
         if validate(){
-            self.openDatabse(email: txtEmail.text!, password:txtPassword.text!)
-            self.navigationController?.popViewController(animated: true)
+            fetchData()
         }
     }
+    
+    /// Fetch data for Check user email already added or not
+    func fetchData(){
+        context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            if(result.isEmpty){
+                self.openDatabse(email: txtEmail.text!, password:txtPassword.text!)
+                self.navigationController?.popViewController(animated: true)
+            }
+            for data in result as! [NSManagedObject] {
+                let email = data.value(forKey: "email") as! String
+                if(txtEmail.text == email ){
+                    showToast(message: "Email already Added")
+                }else{
+                    self.openDatabse(email: txtEmail.text!, password:txtPassword.text!)
+                    self.navigationController?.popViewController(animated: true)
+                }
+                break
+            }
+        } catch {
+            print("Fetching data Failed")
+        }
+    }
+    
+    
 }
+
+
 
 
 //MARK: Functions
@@ -92,8 +120,6 @@ extension SignupVC{
             print("Storing data Failed")
         }
     }
-    
-    
     func deleteAllData(entity: String){
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
         fetchRequest.returnsObjectsAsFaults = false
