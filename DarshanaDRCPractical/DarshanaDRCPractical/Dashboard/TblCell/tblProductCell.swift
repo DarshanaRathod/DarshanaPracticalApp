@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class tblProductCell: UITableViewCell {
     
@@ -19,13 +20,20 @@ class tblProductCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        stepper.addTarget(self, action: #selector(stepperValueChanged), for: .valueChanged)
+           }
         // Initialization code
-    }
 
+   @objc func stepperValueChanged() {
+    lblQuantity.text = "\(Int(stepper.value))"
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
+    @IBAction func stepperAction(_ sender: Any) {
+        
+    }
 }
